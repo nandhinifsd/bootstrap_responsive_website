@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description"content="Custom Handcrafted Tanjore Paintings handcrafted with devotion and care">
+     <meta name="author"content="nandhini">
+    <meta name="robots" content="index, follow">
+    <meta name="keyword"content="tanjore paintings, tanjore art, thanjavur art, custom paintings, gold foil art, handmade art">
+    <title>Nandhini's Tanjore Art Gallery</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<style>
+    #maincontainer{
+        background-color:rgb(42, 1, 1);
+    }
+    
+    .custom-navbar{
+        background-color:rgb(42, 1, 1);
+    }
+    .gold-text {
+        font-family: "Playfair Display", serif;
+        background: linear-gradient(
+            45deg,
+            #ac7c7a 0%,
+            #cb9b51 22%, 
+            #f6e27a 45%,
+            #f6f2c0 50%,
+            #f6e27a 55%,
+            #cb9b51 78%,
+            #ac7c7a 100%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    
+    .navbar-title{
+        display:flex;
+        flex-direction:row;
+            font-size: 8rem;
+            text-transform: uppercase;
+            text-shadow: #f6f2c0;
+            font-weight: bolder;
+            padding-left: 20px;
+            h1{
+                position:relative;
+                top:30px;
+                left:20px;
+            }
+            
+        }
+         .nav-link{
+            
+            font-size: 20px;
+        }
+        .nav-link:hover{
+            color:white;
+        }
+        .carousel-inner img{
+            height: 750px;
+        } 
+
+         .margin-about{
+            padding-top: 100px;
+        }
+         
+        .photo{
+            
+            border-radius: 50px;
+            border-color:goldenrod;
+            border-style: double;
+            border-width: 10px;
+        }
+        .artist{
+            h2{
+                font-weight: bold;
+                font-size: 1.5rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+        #artist{
+            background-color:rgb(42, 1, 1);
+        }
+
+        .gold-foil-btn{
+    background: linear-gradient(
+        135deg,
+        #7a5a00 0%,
+        #d4af37 25%,
+        #fff4b0 50%,
+        #d4af37 75%,
+        #7a5a00 100%
+    );
+
+    color: #4a3200;
+    font-weight:bold;
+    border: 1px solid #b8860b;
+    padding: 10px 25px;
+    border-radius: 30px;
+
+    box-shadow:
+        0 2px 5px rgba(0,0,0,0.2),
+        inset 0 1px 1px rgba(255,255,255,0.6);
+
+    transition: all 0.3s ease;
+}
+
+.gold-foil-btn:hover{
+    transform: translateY(-2px);
+    box-shadow:
+        0 4px 10px rgba(0,0,0,0.25),
+        inset 0 1px 1px rgba(255,255,255,0.8);
+}
+
+ #art{
+            background-color:rgb(42, 1, 1);
+        }
+.tanjore-card{
+    background-color: black;
+    border-radius: 50px;
+    border-style: solid;
+    border-color:goldenrod;
+    
+
+}
+.painting-card{
+     background-color: black;
+    border-radius: 50px;
+    border-style: solid;
+    border-color:goldenrod;
+    height: 500px;
+
+}
+  #gallery{
+            background-color:rgb(42, 1, 1);
+        }
+#quote{
+            background-color:rgb(42, 1, 1);
+        }
+
+@media(max-width:1200px)
+{
+    .photoframe{
+        align-items:center;
+    }
+    .photo{
+        height: 200px;
+        width:200px;
+        
+    }
+}
+
+       
+</style>
+
+</head>
+
+
+<body>
+    <div class="container-fluid" id="maincontainer">
+        <!-- NAvbar -->
+   <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+
+   <div class="navbar-title">
+        <img src="pics/logo1.png" alt="Buisness logo" width="100px" height="100px">
+        <h1 class="fw-bold fs-4 gold-text">Tanjore Tales</h1></div>
+        
+    
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+         <li class="nav-item">
+          <a class="nav-link gold-text" aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link gold-text" aria-current="page" href="#artist">Artist</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link gold-text" aria-current="page" href="#art">Tanjore Art</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link gold-text" aria-current="page" href="#gallery">Gallery </a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link gold-text" aria-current="page" href="#quote">Get Quote</a>
+        </li>
+
+      </ul>
+    
+    </div>
+ 
+</nav>
+
+<!-- Carousel -->
+ <div class="container-fluid" id="home">
+     <div class="margin-about"></div>
+     <div class="margin-about"></div>
+ <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="pics/carosal1.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="pics/carosal2.jpeg" class="d-block w-100" alt="...">
+    </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+<!--artist section-->
+ <div class="container-fluid" id="artist">
+     <div class="margin-about"></div>
+     <h1 class="gold-text ms-5">About Artist</h1>  
+    <div class="row">
+        <div class="col-sm-12 col-xl-4 ms-5 photoframe text-center text-xl-start">
+            
+                <img class="photo img-fluid" src="pics/artist.png" width="300px" height="300px" alt="not found" style="margin-top: 100px;"/>
+        </div>
+
+        <div class="col-sm-12 col-xl-7 ms-auto me-5">
+            <div class="margin-about"></div>
+                <div class="artist">
+                <h2 class="gold-text">Nandhini Sivakumar</h2>
+                <h2 class="gold-text">Penkraft Certified Tanjore Painting Artist</h2>
+                <p class="gold-text" align="justify">With a passion for traditional Indian art, Nandhini specializes in creating handcrafted Tanjore paintings that celebrate spirituality, heritage, and timeless beauty. Each artwork is carefully crafted using authentic methods, vibrant colors, and detailed gold embellishments, ensuring that every piece carries the elegance and grandeur for which Tanjore art is renowned.
+Her mission is to preserve this cherished artistic legacy while creating meaningful works that can be treasured for generations</p>
+
+    <p class="gold-text"><strong>Heritage in Gold, Devotion in Every Detail</strong></p>
+                <a href="#gallery" class="btn gold-foil-btn">
+    Explore my arts
+</a></div>
+            </div>
+        </div>
+    </div>
+  
+ 
+
+ <!--Tanjore Art Section -->
+
+ <section class="section" id="art">
+    <div class="container">
+      <div class="margin-about"></div>
+        <div class="row py-5">
+            <div class="col-lg-5 sm-12 m-auto text-center">
+                <h1 class="gold-text"><strong>Heritage and Craftsmanship of Tanjore Paintings</strong></h1>
+                <p class="gold-text">Every Tanjore painting tells a story of tradition, devotion, and artistic excellence. From its royal origins in Thanjavur to the meticulous techniques and patience involved in its creation, discover what makes this treasured art form a symbol of India's rich cultural heritage.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-12">
+                <div class="card text-center py-5 tanjore-card" >
+
+  <div class="card-body">
+      
+    <h5 class="card-title gold-text"><strong>History & Origin</strong></h5>
+    <div class="collapse" id="history">
+    <p class="card-text gold-text">Tanjore painting originated in the temple town of Thanjavur during the 16th century under the patronage of the Nayak and Maratha rulers. Known for its rich colors, gold embellishments, and devotional themes, this classical South Indian art form has been cherished for generations as a symbol of culture, spirituality, and artistic excellence.</p>
+    </div>
+    <button class="btn gold-foil-btn mt-3" data-bs-toggle="collapse" data-bs-target="#history">Read more</button>
+    
+</div>
+</div>
+</div>
+ <div class="col-lg-4 col-sm-12">
+<div class="card text-center py-5 tanjore-card" >
+
+  <div class="card-body">
+          <h5 class="card-title gold-text"><strong>Materials Used</strong></h5>
+          <div class="collapse" id="materials">
+    <p class="card-text gold-text">Traditional Tanjore paintings are created using carefully selected materials, including wooden boards, cloth, chalk powder, Arabic gum, semi-precious stones, vibrant colors, and pure gold foil. Each element plays an important role in creating the distinctive raised relief work and radiant golden finish that make Tanjore paintings unique.</p></div>
+    <button class="btn gold-foil-btn mt-3" data-bs-toggle="collapse" data-bs-target="#materials">Read more</button>
+  </div>
+</div>
+ </div>
+ <div class="col-lg-4 col-sm-12">
+<div class="card text-center py-5 tanjore-card" >
+
+  <div class="card-body">
+          <h5 class="card-title gold-text"><strong>Patience & Dedication</strong></h5>
+          <div class="collapse" id="Timeline">
+    <p class="card-text gold-text">Creating a Tanjore painting is a meticulous process that requires immense patience, precision, and dedication. From preparing the base and sketching intricate details to applying relief work, embedding stones, and laying gold foil, every stage demands careful attention. A single artwork may take days or even weeks to complete, making each piece a true labor of love and craftsmanship.</p></div>
+    <button class="btn gold-foil-btn mt-3" data-bs-toggle="collapse" data-bs-target="#Timeline">Read more</button>
+  </div>
+</div>
+            </div>
+        </div>
+        <div class="margin-about"></div>
+    </div>
+  </section>
+
+  <!--Gallery section-->
+
+   <section class="section" id="gallery">
+
+    <div class="container-fluid py-5">
+        <div class="margin-about"></div>
+        <h1 class="gold-text"><strong>MY Tanjore Artwork Gallery</strong></h1>
+        <div class="row py-5">
+        <div class="col-lg-3 text-center">
+        <div class="card border-1 painting-card">
+ 
+                 <div class="card-body">
+                 <img src="pics/lakshmi.jpeg" class="card-img-top" alt="..." height="300px" width="200px">
+                </div>
+                <h6 class="gold-text">Goddess Lakshmi</h6>
+                <p class="gold-text">9 in X 12 in</p>
+                <a href="#" class="btn gold-foil-btn mt-2">Add to Cart</a>
+        </div>
+    </div>
+
+        <div class="col-lg-3 text-center">
+        <div class="card border-1 painting-card">
+ 
+             <div class="card-body">
+                    <img src="pics/saraswathi.jpeg" class="card-img-top" alt="..." height="300px" width="200px">
+   
+             </div>
+        <h6 class="gold-text">Goddess Saraswathi</h6>
+        <p class="gold-text">9 in X 12 in</p>
+         <a href="#" class="btn gold-foil-btn mt-2">Add to Cart</a>
+        </div>
+        </div>
+
+        <div class="col-lg-3 text-center">
+        <div class="card border-1 painting-card">
+ 
+            <div class="card-body">
+                <img src="pics/ganesha.jpeg" class="card-img-top" alt="..." height="300px" width="200px">
+   
+            </div>
+        <h6 class="gold-text">God Ganesha</h6>
+        <p class="gold-text">8 in X 8 in</p>
+        <a href="#" class="btn gold-foil-btn mt-2">Add to Cart</a>
+    </div>
+        </div>
+
+           <div class="col-lg-3 text-center">
+            <div class="card border-1 painting-card">
+ 
+            <div class="card-body">
+                <img src="pics/vinayaga.jpeg" class="card-img-top" alt="..." height="300px" width="200px">
+   
+            </div>
+            <h6 class="gold-text">God Ganesha</h6>
+            <p class="gold-text">9 in X 12 in</p>
+            <a href="#" class="btn gold-foil-btn">Add to Cart</a>
+            </div>
+            </div>
+         </div>
+         <div class="row py-5">
+
+        <div class="col-lg-3 text-center">
+                <div class="card border-1 painting-card">
+ 
+                <div class="card-body">
+                     <img src="pics/muruga.jpeg" class="card-img-top" alt="..." height="300px" width="200px">
+   
+                 </div>
+                <h6 class="gold-text">God Muruga</h6>
+                <p class="gold-text">9 in X 12 in</p>
+                <a href="#" class="btn gold-foil-btn">Add to Cart</a>
+        </div>
+        </div>
+         <div class="col-lg-3 text-center">
+                <div class="card border-1 painting-card">
+ 
+                <div class="card-body">
+                    <img src="pics/venkateshwara.jpeg" class="card-img-top" alt="..." height="300px" width="200px">
+   
+                </div>
+                <h6 class="gold-text">God Venkateshwara</h6>
+                <p class="gold-text">9 in X 12 in</p>
+                <a href="#" class="btn gold-foil-btn mt-2">Add to Cart</a>
+            </div>
+        </div>
+          <div class="col-lg-3 text-center">
+            <div class="card border-1 painting-card">
+ 
+                <div class="card-body" >
+                    <img src="pics/krishna.jpeg" class="card-img-top" alt="..." height="300px" width="200px">
+   
+                </div>
+            <h6 class="gold-text">god Krishna</h6>
+            <p class="gold-text">8 in X 10 in</p>
+            <a href="#" class="btn gold-foil-btn">Add to Cart</a>
+            </div>
+            </div>
+         </div>
+   </section>
+
+
+   <!-- Get Quote-->
+    <section class="section" id="quote">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 m-auto text-center">
+            <h1 class="gold-text">Get Your Personalised quote</h1>
+            <p class="gold-text"><strong>Provide Us your idea. We make it happen</strong></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 m-auto text-center">
+            <div class="mb-3">
+ 
+  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+</div>
+          <div class="mb-3">
+ 
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+</div>
+<div class="mb-3">
+     <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Mobile">
+</div>
+          <div class="mb-3">
+    <input type="url" class="form-control" id="exampleFormControlInput1" placeholder="Image URL">
+</div>
+<div class="mb-3">
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="" placeholder="Message"></textarea>
+</div>
+          <div class="mb-3">
+            <div class="dropdown">
+  <button class="btn gold-foil-btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Select your painting Size here
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Custom Painting size</a></li>
+    <li><a class="dropdown-item" href="#">6 in X 8 in</a></li>
+    <li><a class="dropdown-item" href="#">8 in X 8 in</a></li>
+    <li><a class="dropdown-item" href="#">9 in X 12 in</a></li>
+    <li><a class="dropdown-item" href="#">12 in X 15 in</a></li>
+
+  </ul>
+</div>
+</div>
+
+<div class="mb-3">
+            <div class="dropdown">
+  <button class="btn gold-foil-btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Select your painting Size here
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Frame Type</a></li>
+    <li><a class="dropdown-item" href="#">Wood-Karakudi style</a></li>
+    <li><a class="dropdown-item" href="#">Wood-mini ball style</a></li>
+    <li><a class="dropdown-item" href="#">Plastic brown frame</a></li>
+    <li><a class="dropdown-item" href="#">Gold frame with padding</a></li>
+
+  </ul>
+</div>
+</div>
+    
+ 
+<div class="mb-3 text-center">
+  <button type="button" class="btn btn-success">Submit</button>
+
+</div>
+</div>
+        </div>
+      </div>
+    </section>*/
+  
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
