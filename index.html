@@ -288,8 +288,13 @@ Her mission is to preserve this cherished artistic legacy while creating meaning
     <div class="collapse" id="history">
     <p class="card-text gold-text">Tanjore painting originated in the temple town of Thanjavur during the 16th century under the patronage of the Nayak and Maratha rulers. Known for its rich colors, gold embellishments, and devotional themes, this classical South Indian art form has been cherished for generations as a symbol of culture, spirituality, and artistic excellence.</p>
     </div>
-    <button class="btn gold-foil-btn mt-3" data-bs-toggle="collapse" data-bs-target="#history">Read more</button>
-    
+    <button class="btn gold-foil-btn mt-3" id="readmore1" data-bs-toggle="collapse" data-bs-target="#history">Read more</button>
+    <script>
+     const collapseElement1=document.getElementById('history');
+      const button1=document.getElementById('readmore1');
+      collapseElement1.addEventListener('shown.bs.collapse',()=>{button1.textContent='Read Less'});
+      collapseElement1.addEventListener('hidden.bs.collapse',()=>{button1.textContent='Read More'});
+    </script>
 </div>
 </div>
 </div>
@@ -300,7 +305,13 @@ Her mission is to preserve this cherished artistic legacy while creating meaning
           <h5 class="card-title gold-text"><strong>Materials Used</strong></h5>
           <div class="collapse" id="materials">
     <p class="card-text gold-text">Traditional Tanjore paintings are created using carefully selected materials, including wooden boards, cloth, chalk powder, Arabic gum, semi-precious stones, vibrant colors, and pure gold foil. Each element plays an important role in creating the distinctive raised relief work and radiant golden finish that make Tanjore paintings unique.</p></div>
-    <button class="btn gold-foil-btn mt-3" data-bs-toggle="collapse" data-bs-target="#materials">Read more</button>
+    <button class="btn gold-foil-btn mt-3" id="readmore2" data-bs-toggle="collapse" data-bs-target="#materials">Read more</button>
+ <script>
+     const collapseElement2=document.getElementById('materials');
+      const button2=document.getElementById('readmore2');
+      collapseElement2.addEventListener('shown.bs.collapse',()=>{button2.textContent='Read Less'});
+      collapseElement2.addEventListener('hidden.bs.collapse',()=>{button2.textContent='Read More'});
+    </script>
   </div>
 </div>
  </div>
@@ -311,7 +322,13 @@ Her mission is to preserve this cherished artistic legacy while creating meaning
           <h5 class="card-title gold-text"><strong>Patience & Dedication</strong></h5>
           <div class="collapse" id="Timeline">
     <p class="card-text gold-text">Creating a Tanjore painting is a meticulous process that requires immense patience, precision, and dedication. From preparing the base and sketching intricate details to applying relief work, embedding stones, and laying gold foil, every stage demands careful attention. A single artwork may take days or even weeks to complete, making each piece a true labor of love and craftsmanship.</p></div>
-    <button class="btn gold-foil-btn mt-3" data-bs-toggle="collapse" data-bs-target="#Timeline">Read more</button>
+    <button class="btn gold-foil-btn mt-3" id="readmore3" data-bs-toggle="collapse" data-bs-target="#Timeline">Read more</button>
+  <script>
+      const collapseElement3=document.getElementById('Timeline');
+      const button3=document.getElementById('readmore3');
+      collapseElement3.addEventListener('shown.bs.collapse',()=>{button3.textContent='Read Less'});
+      collapseElement3.addEventListener('hidden.bs.collapse',()=>{button3.textContent='Read More'});
+    </script>
   </div>
 </div>
             </div>
